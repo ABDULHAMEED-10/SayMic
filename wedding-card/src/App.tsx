@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import { GiDiamondRing, GiFlowerEmblem, GiPartyPopper, GiCrown } from 'react-icons/gi'
 import { MdRestaurant, MdLocationOn } from 'react-icons/md'
-import { FaMapMarkerAlt, FaBuilding, FaDirections } from 'react-icons/fa'
+import { FaBuilding, FaDirections } from 'react-icons/fa'
 import { IoSparkles } from 'react-icons/io5'
 
 interface URLParams {
