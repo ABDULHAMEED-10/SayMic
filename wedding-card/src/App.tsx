@@ -31,10 +31,18 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-primary text-tertiary">
+    <div className="min-h-screen bg-primary text-tertiary relative">
+      {/* Foreground Image Overlay */}
+      <div className="fixed inset-0 z-50 pointer-events-none">
+        <img 
+          src="/ForGround.png" 
+          alt="Foreground decoration" 
+          className="w-full h-full object-cover opacity-80"
+        />
+      </div>
       {/* Islamic Header */}
-      <div className='my-10'>
-        <div className="text-center relative z-10">
+      <div className='my-10 relative z-60'>
+        <div className="text-center relative z-60">
           <div className="text-2xl md:text-3xl font-playfair text-white mb-4 ">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</div>
 
           <h1 className="text-3xl md:text-5xl font-greatvibes mb-4 animate-fade-in">
@@ -70,7 +78,7 @@ function App() {
         </div>
       
 
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 relative z-60">
         {/* Main Content */}
         <div className="grid lg:grid-cols-2 gap-8 mb-6 relative">
           {/* Beautiful Vertical Separation Line */}
