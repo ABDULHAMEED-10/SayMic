@@ -175,15 +175,34 @@ export default function Home() {
             The B2B voice to lead solution. Embed <SayMicGradient /> on your website. Customers speak directly to your business. Orders, bookings, and requests captured instantly. Delivered to your email, WhatsApp, or dashboard. Zero missed calls. Maximum conversions.
           </p>
           <p className="text-base md:text-lg text-accent font-semibold mb-6 md:mb-8">
-            Connecting Customers Through Voice
+            Connect Your Customer Through Voice
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 md:mb-10">
             <Button variant="primary" className="text-base">
               Start Free Trial
             </Button>
             <Button variant="outline" className="text-base bg-transparent">
               Watch Demo
             </Button>
+          </div>
+          
+          {/* Rixon Logo */}
+          <div className="flex items-center justify-center gap-2 mb-12">
+            <span className="text-xs md:text-sm text-muted-foreground">Powered by</span>
+            <a 
+              href="https://rixon.agency" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity"
+            >
+              <Image 
+                src="/images/rixon logo.png" 
+                alt="Rixon" 
+                width={80} 
+                height={32} 
+                className="h-4 md:h-5 w-auto object-contain"
+              />
+            </a>
           </div>
 
           {/* Desktop/Laptop Screen Prototype - Showing SayMic on Business Website */}
@@ -578,7 +597,7 @@ export default function Home() {
                 <Image src="/images/logo.png" alt="SayMic Logo" width={28} height={28} className="w-6 h-6 md:w-7 md:h-7" />
                 <span className="font-bold text-sm md:text-base text-foreground">SayMic</span>
               </div>
-              <p className="text-xs md:text-sm text-muted-foreground italic">Connecting Customers Through Voice.</p>
+              <p className="text-xs md:text-sm text-muted-foreground italic">Connect Your Customer Through Voice.</p>
             </div>
             <div>
               <h4 className="font-bold text-sm md:text-base text-foreground mb-3 md:mb-4">Product</h4>
@@ -643,6 +662,17 @@ export default function Home() {
           </div>
           <div className="border-t border-border pt-6 md:pt-8 text-center text-xs md:text-sm text-muted-foreground">
             <p>&copy; 2026 SayMic. All rights reserved.</p>
+            <p className="mt-2 md:mt-3">
+              Powered by{" "}
+              <a 
+                href="https://rixon.agency" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-accent hover:text-accent/80 transition-colors font-medium"
+              >
+                rixon.agency
+              </a>
+            </p>
           </div>
         </div>
       </footer>
