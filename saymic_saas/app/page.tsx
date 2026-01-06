@@ -205,7 +205,7 @@ export default function Home() {
                           <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-card/30"></div>
                         </div>
                         <div className="flex-1 bg-background rounded-lg px-2 md:px-4 py-1 md:py-1.5 mx-2 md:mx-4 border border-border">
-                          <p className="text-[10px] md:text-xs text-muted-foreground truncate">citytaxi.com/book-ride</p>
+                          <p className="text-[10px] md:text-xs text-muted-foreground truncate">glamoursalon.com/book-appointment</p>
                         </div>
                         <Laptop className="w-4 h-4 md:w-5 md:h-5 text-muted-foreground flex-shrink-0" />
                       </div>
@@ -214,8 +214,8 @@ export default function Home() {
                       <div className="p-3 md:p-4 lg:p-6 xl:p-8">
                         {/* Business Header */}
                         <div className="mb-4 md:mb-6 pb-3 md:pb-4 border-b border-border">
-                          <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-foreground mb-1 md:mb-2">City Taxi Services</h2>
-                          <p className="text-xs md:text-sm text-muted-foreground">Book your ride in seconds</p>
+                          <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-foreground mb-1 md:mb-2">Glamour Salon</h2>
+                          <p className="text-xs md:text-sm text-muted-foreground">Book your appointment in seconds</p>
                         </div>
 
                         {/* SayMic Embedded on Business Website */}
@@ -225,7 +225,7 @@ export default function Home() {
                               <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-accent-foreground/20 flex items-center justify-center">
                                 <Mic className="w-4 h-4 md:w-5 md:w-6 text-accent-foreground group-hover:scale-110 transition-transform" />
                               </div>
-                              <span className="whitespace-nowrap">Speak to City Taxi</span>
+                              <span className="whitespace-nowrap">Speak to Glamour Salon</span>
                             </button>
                           </div>
                           <div className="bg-accent/20 px-2 md:px-3 py-0.5 md:py-1 rounded-full border border-accent/30 shadow-sm">
@@ -233,7 +233,7 @@ export default function Home() {
                           </div>
                         </div>
                         <p className="text-center text-[10px] md:text-xs text-muted-foreground mb-4 md:mb-6 px-2">
-                          SayMic embedded on City Taxi's website • Customer speaks directly to the business
+                          SayMic embedded on Glamour Salon's website • Customer speaks directly to the business
                         </p>
 
                         {/* Flow Visualization - Customer Using SayMic */}
@@ -244,10 +244,10 @@ export default function Home() {
                               <Mic className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8 text-accent-foreground" />
                             </div>
                             <div className="flex-1 pt-1 md:pt-2">
-                              <p className="text-xs md:text-sm text-accent font-semibold mb-1">Speaking to City Taxi</p>
+                              <p className="text-xs md:text-sm text-accent font-semibold mb-1">Speaking to Glamour Salon</p>
                               <p className="text-sm md:text-base lg:text-lg font-semibold text-foreground mb-1 md:mb-2">Customer Request:</p>
                               <p className="text-xs md:text-sm lg:text-base text-muted-foreground italic leading-relaxed">
-                                "Order a cab from Mall to Airport"
+                                "Book an appointment for hair cut tomorrow at 3pm"
                               </p>
                             </div>
                           </div>
@@ -261,35 +261,25 @@ export default function Home() {
                             <p className="text-sm md:text-base lg:text-lg font-semibold text-foreground mb-3 md:mb-4">Lead Captured:</p>
                             <div className="grid grid-cols-2 gap-2 md:gap-3 lg:gap-4 text-xs md:text-sm lg:text-base xl:text-lg">
                               <div className="flex justify-between items-center p-2 md:p-3 bg-accent/5 rounded-lg border border-accent/10">
-                                <span className="text-muted-foreground">Pickup:</span>
-                                <span className="text-foreground font-semibold">Mall</span>
+                                <span className="text-muted-foreground">Service:</span>
+                                <span className="text-foreground font-semibold">Hair Cut</span>
                               </div>
                               <div className="flex justify-between items-center p-2 md:p-3 bg-accent/5 rounded-lg border border-accent/10">
-                                <span className="text-muted-foreground">Drop:</span>
-                                <span className="text-foreground font-semibold">Airport</span>
+                                <span className="text-muted-foreground">Date/Time:</span>
+                                <span className="text-foreground font-semibold">Tomorrow 3pm</span>
                               </div>
                             </div>
-                            <p className="text-[10px] md:text-xs text-muted-foreground mt-2 md:mt-3 italic">Custom fields configured for taxi business</p>
+                            <p className="text-[10px] md:text-xs text-muted-foreground mt-2 md:mt-3 italic">Custom fields configured for salon business</p>
                           </div>
                           
-                          {/* Step 3: Lead Delivered to City Taxi */}
-                          <div className="flex items-center gap-2 md:gap-3 lg:gap-4 p-3 md:p-4 lg:p-5 bg-card rounded-xl md:rounded-2xl border border-accent/20 shadow-sm">
-                            <Building2 className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 text-accent flex-shrink-0" />
-                            <div className="flex-1 min-w-0">
-                              <p className="text-xs md:text-sm text-accent font-semibold mb-1">Lead Delivered</p>
-                              <p className="text-xs md:text-sm lg:text-base xl:text-lg text-foreground font-medium break-words">City Taxi received notification via Email/WhatsApp/Dashboard</p>
-                            </div>
-                            <div className="w-2 h-2 md:w-3 md:h-3 bg-secondary rounded-full flex-shrink-0"></div>
-                          </div>
-                          
-                          {/* Step 4: Business Confirms */}
+                          {/* Step 3: Business Confirms */}
                           <div className="flex items-center gap-2 md:gap-3 lg:gap-4 p-3 md:p-4 lg:p-5 bg-accent/20 rounded-xl md:rounded-2xl border-2 border-accent/40 shadow-lg">
                             <div className="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 rounded-full bg-accent flex items-center justify-center flex-shrink-0 shadow-lg">
                               <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-accent-foreground" />
                             </div>
                             <div className="flex-1 min-w-0">
                               <p className="text-xs md:text-sm text-accent font-semibold mb-1">Booking Confirmed</p>
-                              <p className="text-xs md:text-sm lg:text-base xl:text-lg text-foreground font-semibold break-words">City Taxi dispatched your cab • No missed call!</p>
+                              <p className="text-xs md:text-sm lg:text-base xl:text-lg text-foreground font-semibold break-words">Glamour Salon confirmed your appointment • No missed call!</p>
                             </div>
                           </div>
                         </div>

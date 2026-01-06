@@ -198,8 +198,7 @@ export function InteractiveSteps() {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="flex items-center gap-2 md:gap-3 p-2 md:p-3 rounded-lg"
-                    style={{ backgroundColor: '#FFE5D9', border: '1px solid #F5D5C8' }}
+                    className="flex items-center gap-2 md:gap-3 p-2 md:p-3 rounded-lg bg-orange-100/50 dark:bg-orange-900/30 border border-orange-200/50 dark:border-orange-800/50"
                   >
                     <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
                       <span className="text-[10px] md:text-xs text-accent-foreground font-bold">✓</span>
