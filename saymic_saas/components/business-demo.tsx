@@ -47,77 +47,77 @@ export function BusinessDemo() {
   const [selectedIdx, setSelectedIdx] = useState(0)
 
   return (
-    <div className="space-y-12">
-      <div className="text-center space-y-4">
-        <h3 className="text-4xl font-bold text-foreground">Real Business Scenarios</h3>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+    <div className="space-y-8 md:space-y-12 px-4">
+      <div className="text-center space-y-3 md:space-y-4">
+        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">Real Business Scenarios</h3>
+        <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto">
           See how different businesses use SayMic to convert more customers and save time
         </p>
       </div>
 
       {/* Scenario Selector */}
-      <div className="flex flex-wrap justify-center gap-3">
+      <div className="flex flex-wrap justify-center gap-2 md:gap-3">
         {businesses.map((biz, idx) => {
           const IconComponent = biz.icon
           return (
             <button
               key={idx}
               onClick={() => setSelectedIdx(idx)}
-              className={`flex items-center gap-2 px-5 py-3 rounded-lg border-2 font-semibold transition-all ${
+              className={`flex items-center gap-1.5 md:gap-2 px-3 md:px-4 lg:px-5 py-2 md:py-2.5 lg:py-3 rounded-lg border-2 font-semibold text-xs md:text-sm transition-all ${
                 selectedIdx === idx
                   ? "border-accent bg-accent/10 text-foreground"
                   : "border-border text-muted-foreground hover:border-accent/50"
               }`}
             >
-              <IconComponent className="w-5 h-5" />
-              <span>{biz.name}</span>
+              <IconComponent className="w-4 h-4 md:w-5 md:h-5" />
+              <span className="whitespace-nowrap">{biz.name}</span>
             </button>
           )
         })}
       </div>
 
       {/* Selected Scenario Detail */}
-      <div className="border border-border rounded-2xl overflow-hidden bg-card/50">
+      <div className="border border-border rounded-xl md:rounded-2xl overflow-hidden bg-card/50">
         {/* Header */}
-        <div className="bg-gradient-to-r from-accent/30 to-primary/30 border-b border-border p-8">
-          <div className="flex items-start gap-4">
+        <div className="bg-gradient-to-r from-accent/30 to-primary/30 border-b border-border p-4 md:p-6 lg:p-8">
+          <div className="flex items-start gap-3 md:gap-4">
             {(() => {
               const IconComponent = businesses[selectedIdx].icon
-              return <IconComponent className="w-8 h-8 text-accent flex-shrink-0" />
+              return <IconComponent className="w-6 h-6 md:w-8 md:h-8 text-accent flex-shrink-0" />
             })()}
             <div>
-              <h4 className="text-2xl font-bold text-foreground mb-1">{businesses[selectedIdx].name}</h4>
-              <p className="text-accent font-semibold">{businesses[selectedIdx].scenario}</p>
+              <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-1">{businesses[selectedIdx].name}</h4>
+              <p className="text-xs md:text-sm text-accent font-semibold">{businesses[selectedIdx].scenario}</p>
             </div>
           </div>
         </div>
 
         {/* Content */}
-        <div className="p-8 space-y-6">
+        <div className="p-4 md:p-6 lg:p-8 space-y-4 md:space-y-6">
           {/* Before/After */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-red-500/5 border border-red-500/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-red-500 mb-3 uppercase tracking-wide">Before SayMic</p>
-              <p className="text-foreground leading-relaxed">{businesses[selectedIdx].before}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            <div className="bg-red-500/5 border border-red-500/30 rounded-lg md:rounded-xl p-4 md:p-6">
+              <p className="text-[10px] md:text-xs font-bold text-red-500 mb-2 md:mb-3 uppercase tracking-wide">Before SayMic</p>
+              <p className="text-xs md:text-sm text-foreground leading-relaxed">{businesses[selectedIdx].before}</p>
             </div>
-            <div className="bg-accent/5 border border-accent/30 rounded-xl p-6">
-              <p className="text-xs font-bold text-accent mb-3 uppercase tracking-wide">With SayMic</p>
-              <p className="text-foreground leading-relaxed">{businesses[selectedIdx].after}</p>
+            <div className="bg-accent/5 border border-accent/30 rounded-lg md:rounded-xl p-4 md:p-6">
+              <p className="text-[10px] md:text-xs font-bold text-accent mb-2 md:mb-3 uppercase tracking-wide">With SayMic</p>
+              <p className="text-xs md:text-sm text-foreground leading-relaxed">{businesses[selectedIdx].after}</p>
             </div>
           </div>
 
           {/* Data Capture Mockup */}
-          <div className="bg-card border border-accent/20 rounded-lg p-6 font-mono text-sm">
-            <p className="text-accent mb-3 font-bold text-xs uppercase">Captured Data</p>
-            <p className="text-foreground">{businesses[selectedIdx].mockup}</p>
+          <div className="bg-card border border-accent/20 rounded-lg p-4 md:p-6 font-mono text-xs md:text-sm">
+            <p className="text-accent mb-2 md:mb-3 font-bold text-[10px] md:text-xs uppercase">Captured Data</p>
+            <p className="text-foreground break-words">{businesses[selectedIdx].mockup}</p>
           </div>
 
           {/* Key Benefit */}
-          <div className="pt-4 border-t border-border flex items-start gap-3">
-            <BarChart3 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+          <div className="pt-3 md:pt-4 border-t border-border flex items-start gap-2 md:gap-3">
+            <BarChart3 className="w-4 h-4 md:w-5 md:h-5 text-accent flex-shrink-0 mt-0.5" />
             <div>
-              <p className="text-sm font-semibold text-accent">Impact</p>
-              <p className="text-foreground">{businesses[selectedIdx].benefit}</p>
+              <p className="text-xs md:text-sm font-semibold text-accent">Impact</p>
+              <p className="text-sm md:text-base text-foreground">{businesses[selectedIdx].benefit}</p>
             </div>
           </div>
         </div>

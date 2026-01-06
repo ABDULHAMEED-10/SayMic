@@ -4,80 +4,82 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color tokens for SayMic - dark premium SaaS theme */
-  --background: oklch(0.97 0.02 264);
-  --foreground: oklch(0.12 0.03 264);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.12 0.03 264);
+  /* Modern Purple-Blue-White Color Palette for SayMic */
+  /* Purple as primary/accent, Blue as secondary, White backgrounds */
+  --background: oklch(0.99 0 0); /* Pure white */
+  --foreground: oklch(0.15 0.02 280); /* Deep purple-black */
+  --card: oklch(1 0 0); /* White */
+  --card-foreground: oklch(0.15 0.02 280);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.12 0.03 264);
-  --primary: oklch(0.15 0.1 264);
-  --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.35 0.15 264);
-  --secondary-foreground: oklch(0.99 0 0);
-  --muted: oklch(0.92 0.01 264);
-  --muted-foreground: oklch(0.45 0.03 264);
-  --accent: oklch(0.35 0.2 272);
-  --accent-foreground: oklch(0.99 0 0);
+  --popover-foreground: oklch(0.15 0.02 280);
+  --primary: oklch(0.45 0.18 280); /* Rich purple */
+  --primary-foreground: oklch(0.99 0 0); /* White */
+  --secondary: oklch(0.55 0.15 240); /* Beautiful blue */
+  --secondary-foreground: oklch(0.99 0 0); /* White */
+  --muted: oklch(0.96 0.01 280); /* Very light purple-gray */
+  --muted-foreground: oklch(0.45 0.02 280);
+  --accent: oklch(0.50 0.20 280); /* Vibrant purple */
+  --accent-foreground: oklch(0.99 0 0); /* White */
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.95 0.01 264);
-  --input: oklch(0.95 0.01 264);
-  --ring: oklch(0.35 0.15 264);
-  --chart-1: oklch(0.35 0.2 272);
-  --chart-2: oklch(0.15 0.1 264);
-  --chart-3: oklch(0.5 0.18 300);
-  --chart-4: oklch(0.6 0.15 270);
-  --chart-5: oklch(0.7 0.12 280);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.92 0.01 280); /* Light purple-gray border */
+  --input: oklch(0.92 0.01 280);
+  --ring: oklch(0.50 0.20 280); /* Purple ring */
+  --chart-1: oklch(0.50 0.20 280); /* Purple */
+  --chart-2: oklch(0.55 0.15 240); /* Blue */
+  --chart-3: oklch(0.60 0.18 300); /* Magenta-purple */
+  --chart-4: oklch(0.50 0.12 260); /* Deep purple */
+  --chart-5: oklch(0.65 0.15 250); /* Light purple-blue */
   --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: oklch(0.98 0.005 280);
+  --sidebar-foreground: oklch(0.15 0.02 280);
+  --sidebar-primary: oklch(0.45 0.18 280);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.95 0.01 280);
+  --sidebar-accent-foreground: oklch(0.45 0.18 280);
+  --sidebar-border: oklch(0.92 0.01 280);
+  --sidebar-ring: oklch(0.50 0.20 280);
 }
 
 .dark {
-  --background: oklch(0.08 0.02 264);
-  --foreground: oklch(0.95 0.01 264);
-  --card: oklch(0.12 0.02 264);
-  --card-foreground: oklch(0.95 0.01 264);
-  --popover: oklch(0.12 0.02 264);
-  --popover-foreground: oklch(0.95 0.01 264);
-  --primary: oklch(0.35 0.15 264);
-  --primary-foreground: oklch(0.08 0.02 264);
-  --secondary: oklch(0.55 0.18 272);
-  --secondary-foreground: oklch(0.08 0.02 264);
-  --muted: oklch(0.25 0.03 264);
-  --muted-foreground: oklch(0.65 0.04 264);
-  --accent: oklch(0.55 0.22 272);
-  --accent-foreground: oklch(0.08 0.02 264);
+  /* Dark mode with purple-blue theme */
+  --background: oklch(0.10 0.02 280); /* Very dark purple */
+  --foreground: oklch(0.95 0.01 280); /* Light purple-white */
+  --card: oklch(0.15 0.02 280); /* Dark purple card */
+  --card-foreground: oklch(0.95 0.01 280);
+  --popover: oklch(0.15 0.02 280);
+  --popover-foreground: oklch(0.95 0.01 280);
+  --primary: oklch(0.60 0.20 280); /* Bright purple */
+  --primary-foreground: oklch(0.10 0.02 280);
+  --secondary: oklch(0.65 0.18 240); /* Bright blue */
+  --secondary-foreground: oklch(0.10 0.02 280);
+  --muted: oklch(0.20 0.02 280); /* Dark purple-gray */
+  --muted-foreground: oklch(0.70 0.02 280);
+  --accent: oklch(0.65 0.22 280); /* Vibrant purple */
+  --accent-foreground: oklch(0.10 0.02 280);
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.2 0.02 264);
-  --input: oklch(0.2 0.02 264);
-  --ring: oklch(0.55 0.2 272);
-  --chart-1: oklch(0.55 0.22 272);
-  --chart-2: oklch(0.65 0.18 264);
-  --chart-3: oklch(0.7 0.2 300);
-  --chart-4: oklch(0.75 0.18 270);
-  --chart-5: oklch(0.8 0.15 280);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --border: oklch(0.25 0.02 280); /* Dark purple border */
+  --input: oklch(0.25 0.02 280);
+  --ring: oklch(0.65 0.22 280); /* Purple ring */
+  --chart-1: oklch(0.65 0.22 280); /* Purple */
+  --chart-2: oklch(0.65 0.18 240); /* Blue */
+  --chart-3: oklch(0.70 0.20 300); /* Magenta-purple */
+  --chart-4: oklch(0.60 0.15 260); /* Deep purple */
+  --chart-5: oklch(0.70 0.18 250); /* Light purple-blue */
+  --sidebar: oklch(0.15 0.02 280);
+  --sidebar-foreground: oklch(0.95 0.01 280);
+  --sidebar-primary: oklch(0.60 0.20 280);
+  --sidebar-primary-foreground: oklch(0.10 0.02 280);
+  --sidebar-accent: oklch(0.20 0.02 280);
+  --sidebar-accent-foreground: oklch(0.95 0.01 280);
+  --sidebar-border: oklch(0.25 0.02 280);
+  --sidebar-ring: oklch(0.65 0.22 280);
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --font-sans: var(--font-poppins), "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback", "Courier New", monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -120,7 +122,13 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
+  }
+  a[href^="#"] {
+    scroll-margin-top: 80px;
   }
 }

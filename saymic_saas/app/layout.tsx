@@ -1,10 +1,19 @@
 import type React from "react"
 import type { Metadata } from "next"
+import { Poppins } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-poppins",
+})
+
 export const metadata: Metadata = {
-  title: "SayMic - AI Voice Mic Plugin for Websites",
+  title: "SayMic - Voice-to-Lead Solution for Businesses",
   description:
     "SayMic lets customers speak instead of typing. Capture orders, bookings, and requests instantly with AI-powered voice-to-text and translation for your business.",
   generator: "v0.app",
@@ -20,9 +29,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`font-sans antialiased bg-background`}>
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${poppins.variable} font-sans antialiased bg-background`}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          {children}
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>
