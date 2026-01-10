@@ -193,7 +193,7 @@ export default function Home() {
               href="https://rixon.agency" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:opacity-80 transition-opacity"
+              className="hover:opacity-80 transition-opacity inline-flex items-center justify-center p-1.5 rounded-md bg-purple-800 border border-purple-700 shadow-sm"
             >
               <Image 
                 src="/images/rixon logo.png" 

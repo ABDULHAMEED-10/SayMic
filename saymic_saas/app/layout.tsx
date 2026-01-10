@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${poppins.variable} font-sans antialiased bg-background`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          {children}
+        {children}
         </ThemeProvider>
         <Analytics />
       </body>
